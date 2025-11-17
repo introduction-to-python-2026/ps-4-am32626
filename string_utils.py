@@ -1,4 +1,4 @@
-def split_before_each_uppercase(e):
+def split_before_each_uppercase(formula):
     prefix = ""
     uppercase = []
     for char in e:
@@ -13,7 +13,7 @@ def split_before_each_uppercase(e):
     return uppercase
 
 
-def split_at_first_digit(s): 
+def split_at_first_digit(formula):
     prefix = ""
     for char in s:
         if char.isdigit():
