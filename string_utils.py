@@ -9,13 +9,12 @@ def split_before_each_uppercase(formula):
             prefix = char
          else:
             prefix += char
-    if prefix != "":
-        uppercase.append(prefix)
-    return uppercase 
+     if prefix != "":
+         uppercase.append(prefix)
+     return uppercase
 
 
 def split_at_first_digit(formula):
-    prefix = ""
     for char in formula:
         if char.isdigit():
             return (prefix, char)
