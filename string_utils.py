@@ -14,7 +14,7 @@ def split_before_each_uppercase(formula):
     return uppercase 
 
 
-def split_at_first_digit(s):
+def split_at_first_digit(formula):
     prefix = ""
     for char in formula:
         if char.isdigit():
