@@ -1,8 +1,8 @@
 
-def split_before_each_uppercase(e):
+def split_before_each_uppercase(formula):
     prefix = ""
     uppercase = []
-    for char in e:
+    for char in formula:
          if char.isupper():
             if prefix != "":
                 uppercase.append(prefix)
@@ -13,9 +13,10 @@ def split_before_each_uppercase(e):
         uppercase.append(prefix)
     return uppercase 
 
+
 def split_at_first_digit(s):
     prefix = ""
-    for char in s:
+    for char in formula:
         if char.isdigit():
             return (prefix, char)
         prefix += char
