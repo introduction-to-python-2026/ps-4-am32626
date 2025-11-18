@@ -1,5 +1,8 @@
 
 def split_before_each_uppercase(formula):
+    if not formula:
+        return []
+    result = []
     prefix = ""
     uppercase = []
     for char in formula:
