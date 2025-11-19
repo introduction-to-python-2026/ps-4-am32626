@@ -3,18 +3,15 @@ def split_before_each_uppercase(formula):
     if not formula:
         return []
     result = []
-    prefix = ""
-    uppercase = []
-    for char in formula:
+    current_word = formula[0]
+    for char in formula[1:]:
         if char.isupper():
-            if prefix:
-                uppercase.append(prefix)
-            prefix = char
+            result.append(current_word)
+            current word = char
         else:
-            prefix += char
-     if prefix:
-         uppercase.append(prefix)
-     return uppercase
+            current word += char
+    result.append(current_word)
+    return result
 
 
 def split_at_first_digit(formula):
