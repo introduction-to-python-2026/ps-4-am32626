@@ -7,9 +7,9 @@ def split_before_each_uppercase(formula):
     for char in formula[1:]:
         if char.isupper():
             result.append(current_word)
-            current word = char
+            current_word = char
         else:
-            current word += char
+            current_word += char
     result.append(current_word)
     return result
 
