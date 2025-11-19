@@ -15,10 +15,16 @@ def split_before_each_uppercase(formula):
 
 
 def split_at_first_digit(formula):
-    prefix = ""
-    for char in formula:
-        if char.isdigit():
-            return (prefix, char)
-        prefix += char
-    return (prefix, "1")
+    digit_location = 0
+    for i, char in enumerate(formula):
+      if char.isdigit():
+         digit_location = i
+         break
+      if digit_location == 0:
+         return formula, 1
+      else:
+        prefix = formula[:digit location]
+        number = 
+    int(formula[digit_locatio:])
+        return prefix, number
     
