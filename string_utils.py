@@ -18,10 +18,10 @@ def split_at_first_digit(formula):
         if char.isdigit():
             digit_location = i
             break
-        if digit_location == 0:
+    if digit_location == 0:
             return formula, 1
-      else:
-          prefix = formula[:digit location]
-          number = int(formula[digit_locatio:])
-          return prefix, number
+    else:
+        prefix = formula[:digit location]
+        number = int(formula[digit_locatio:])
+        return prefix, number
     
