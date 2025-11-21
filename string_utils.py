@@ -10,7 +10,7 @@ def split_before_each_uppercase(formula):
 
 
 
-def split_at_digit(formula):
+def split_at_first_digit(formula):
     for i in range(len(formula)):
         if formula[i].isdigit():
             return formula[:i], int(formula[i:])
