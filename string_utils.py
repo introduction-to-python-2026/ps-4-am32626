@@ -4,7 +4,7 @@ def split_before_each_uppercase(formula):
     for char in range(1, len(formula)):
         if formula[char].isupper():
             list_of_items.append(formula[start:char])
-            start = char
+            start = i
     list_of_items.append(formula[start:])
     return list_of_items
 
@@ -14,5 +14,5 @@ def split_at_first_digit(formula):
     for i in range(len(formula)):
         if formula[i].isdigit():
             return formula[:i], int(formula[i:])
-    return formula, 1
+    return formula, "1"
     
